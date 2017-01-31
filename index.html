@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ticTacToeYo</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body onload="startGame();">
+    <h1>Tickity Tackity Toes</h1>
+    <h2>Instruction</h2>
+    <ul>
+      <li><span class="player1">Player</span> 1 <span class="player1">"X"</span> goes first by choosing a box</li>
+      <li><span class="player2">Player</span> 2 <span class="player2">"O"</span>  will then choose a box</li>
+      <li>The game continues until either no boxs are left</li>
+      <li>Or a <span class= "player">Player</span> has 3 in a row either by row, column, or diagnal</li>
+
+    <div id="message">messages will go here</div>
+    </ul>
+          <div class= "bigBox">
+              <div class="box" id= "box1" onclick= "nextMove(this);"></div>
+              <div class="box" id= "box2" onclick= "nextMove(this);"></div>
+              <div class="box" id= "box3" onclick= "nextMove(this);"></div>
+              <div class="box" id= "box4" onclick= "nextMove(this);"></div>
+              <div class="box" id= "box5" onclick= "nextMove(this);"></div>
+              <div class="box" id= "box6" onclick= "nextMove(this);"></div>
+              <div class="box" id= "box7" onclick= "nextMove(this);"></div>
+              <div class="box" id= "box8" onclick= "nextMove(this);"></div>
+              <div class="box" id= "box9" onclick= "nextMove(this);"></div>
+          </div>
+<button id = "resetb" onclick= "startGame()">reset</button>
+
+
+
+  <script type="text/javascript" src="./js/app.js"></script>
+  </body>
+</html>
