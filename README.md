@@ -41,7 +41,7 @@ I started off by making the Game board and all of the boxs. Once I had a grid se
 
 ## Screen Shots
 
-![wireframe](https://github.com/theamazingmrb/tictactoe/blob/master/screenShots/Screen%20Shot%202017-08-20%20at%202.57.57%20PM.png?raw=true)
+![wireframe](https://github.com/theamazingmrb/tictactoe/blob/master/screenShots/Screen%20Shot%202017-08-20%20at%202.56.23%20PM.png?raw=true)
 
 ![wireframe](https://github.com/theamazingmrb/tictactoe/blob/master/screenShots/Screen%20Shot%202017-08-20%20at%202.56.37%20PM.png?raw=true)
 
