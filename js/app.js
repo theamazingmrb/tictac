@@ -20,7 +20,7 @@ function setMessage(msg){
 ////////////////////////////////
 function nextMove(box){
   if(document.winner != null){
-    setMessage("Winner " + document.winner + " has already won");
+    setMessage("Winner is " + document.winner);
    }
   else if(box.innerText == ""){
   box.innerText = document.turn;
@@ -34,12 +34,12 @@ function nextMove(box){
 
 function switchTurn(){
   if(checkForWinner(document.turn)){
-    setMessage("Congrats, " + document.turn);
+    setMessage("Player " + document.turn + " wins!");
     document.winner = document.turn;
   }
    else if(document.turn == "X"){
     document.turn = "O";
-    setMessage("It's " + document.turn + "s" + " turn")
+    setMessage("It's " + document.turn + " s turn")
   }
   else{
     document.turn = "X";

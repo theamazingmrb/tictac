@@ -14,6 +14,7 @@ button{
   background-color: red;
   color: white;
   font-size: 40px;
+  margin-top: 10px;
 }
 .deadPoolx{
   height:100%;
@@ -21,15 +22,12 @@ button{
 }
 
 .bigBox{
-  background: white;
-  border: 1px solid white;
+  background: orange;
+  border: 1px solid black;
   height:500px;
   width:500px;
-  float:left;
-
 }
 .box{
-  background: ;
   height: 32.12%;
   width: 32.12%;
   border: 3px solid black;
