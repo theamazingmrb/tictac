@@ -68,8 +68,15 @@ ul{
 #message{
   padding-top: 40px;
   font-size: 50px;
-  color: orange;
+  color: orange;  
 }
-#resetB{
-  clearBox();
+
+
+.pull-left {
+  float: left;
 }
+
+.pull-right {
+  float: right;
+}
+
