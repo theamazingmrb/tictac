@@ -11,10 +11,8 @@ div{
   font-size: 50px;
 }
 button{
-  background-color: green;
+  background-color: red;
   color: white;
-  height: 50px;
-  width: 100px;
   font-size: 40px;
 }
 .deadPoolx{
@@ -48,15 +46,15 @@ body:onload{
    background-color: rgb( 30,70 ,100);
 
  }
-.player1{
+
+.player{
+  color: white;
+}
+
+.red {
   color: red;
 }
-.player2{
-  color:dodgerblue;
-}
-.player{
-  color:rgb(0,255,0);
-}
+
 ul{
   text-decoration: none;
   text-align: center;
@@ -68,7 +66,7 @@ ul{
 #message{
   padding-top: 40px;
   font-size: 50px;
-  color: orange;  
+  color:white;
 }
 
 

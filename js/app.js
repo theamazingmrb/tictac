@@ -1,3 +1,4 @@
+// Game Begins
 function startGame(){
 
   for (var i =1; i <= 9; i++){
@@ -30,7 +31,7 @@ function nextMove(box){
   }
 }
 
-/////////////////////////////////////////
+
 function switchTurn(){
   if(checkForWinner(document.turn)){
     setMessage("Congrats, " + document.turn);
@@ -38,14 +39,16 @@ function switchTurn(){
   }
    else if(document.turn == "X"){
     document.turn = "O";
-    setMessage("It's " + document.turn + "'s" + " turn")
+    setMessage("It's " + document.turn + "s" + " turn")
   }
   else{
     document.turn = "X";
     setMessage("It's " + document.turn + "'s" + " turn")
   }
 }
-///////////////////////////////////////
+
+
+
 function checkForWinner(move){
   var result = false;
    if(checkRow(1, 2, 3, move) ||
@@ -78,58 +81,3 @@ function clearBox(number) {
   document.getElementById("box" + number).innerText = "";
 }
 
-
-
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//
-// var cellValue = function(key) {
-//   switch(key) {
-//     case '1': return null;
-//     case '2': return null;
-//     case '3': return null;
-//     case '4': return null;
-//     case '5': return null;
-//     case '6': return null;
-//     case '7': return null;
-//     case '8': return null;
-//     case '9': return null;
-//     default : return null;
-//   }
-// }
-// var getWinner = function(){
-//    if (winnerIs('x')){
-//      return "X is the Winner"
-//    }
-//    if (winnerIs('o')){
-//      return "O is the Winner"
-//    }
-//    else{
-//      return "Tie Game suckers"
-//    }
-// }
-//
-// function winnerIs = function(player){
-//   return winsRow(player) || windColumn(player) || winsDiagnal(player)
-//
-// }
-//
-// function winsRow = function(player){
-//   return allThree(player, cellValue('1'), cellValue('2'), cellValue('3'))
-//   return allThree(player, cellValue('4'), cellValue('5'), cellValue('6'))
-//   return allThree(player, cellValue('7'), cellValue('8'), cellValue('9'))
-//
-// }
-// function winColumn = function(player){
-//   return allThree(player ,cellValue('1'), cellValue('4'), cellValue('7'))
-//   return allThree(player, cellValue('2'), cellValue('5'), cellValue('8'))
-//   return allThree(player, cellValue('3'), cellValue('6'), cellValue('9'))
-//
-// }
-// function winsDiagnal = function(player){
-//   return allThree(player, cellValue('1'), cellValue('5'), cellValue('9'))
-//   return allThree(player, cellValue('7'), cellValue('5'), cellValue('3'))
-// }
-//
-// var allThree = function(player, cellOne, cellTwo, cellThree){
-//   return (cellOne === player) && (cellTwo === player) && (cellThree === player);
-// }
